@@ -32,4 +32,14 @@ char* ler_string() {
     return NULL;
 }
 
-
+int ler_numero_positivo() {
+    int numero;
+    do {
+        printf("Digite um número positivo: ");
+        scanf("%d", &numero);
+        if (numero < 0) {
+            printf("O número deve ser positivo. Tente novamente.\n");
+        }
+    } while (numero < 0);
+    return numero;
+}
