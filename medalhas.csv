@@ -152,9 +152,9 @@ M,100M Men,Athens,1896,B,Francis LANE,USA,12.6
 M,110M Hurdles Men,Rio,2016,G,Omar MCLEOD,JAM,13.05
 M,110M Hurdles Men,Rio,2016,S,Orlando ORTEGA,ESP,13.17
 M,110M Hurdles Men,Rio,2016,B,Dimitri BASCOU,FRA,13.24
-M,110M Hurdles Men,Beijing,2008,G,Dayron ROBLES,CUB,12.93,+0.1
-M,110M Hurdles Men,Beijing,2008,S,David PAYNE,USA,13.17,+0.1
-M,110M Hurdles Men,Beijing,2008,B,David OLIVER,USA,13.18,+0.1
+M,110M Hurdles Men,Beijing,2008,G,Dayron ROBLES,CUB,12.93
+M,110M Hurdles Men,Beijing,2008,S,David PAYNE,USA,13.17
+M,110M Hurdles Men,Beijing,2008,B,David OLIVER,USA,13.18
 M,110M Hurdles Men,Sydney,2000,G,Anier GARCIA,CUB,13.0
 M,110M Hurdles Men,Sydney,2000,S,Terrence TRAMMELL,USA,13.16
 M,110M Hurdles Men,Sydney,2000,B,Mark CREAR,USA,13.22
@@ -1654,9 +1654,9 @@ W,10000M Women,Atlanta,1996,B,Gete WAMI,ETH,31:06.65
 W,100M Hurdles Women,Rio,2016,G,Brianna ROLLINS,USA,12.48
 W,100M Hurdles Women,Rio,2016,S,Nia ALI,USA,12.59
 W,100M Hurdles Women,Rio,2016,B,Kristi CASTLIN,USA,12.61
-W,100M Hurdles Women,Beijing,2008,G,Dawn HARPER,USA,12.54,+0.1
-W,100M Hurdles Women,Beijing,2008,S,Sally PEARSON,AUS,12.64,+0.1
-W,100M Hurdles Women,Beijing,2008,B,Priscilla LOPES-SCHLIEP,CAN,12.64,+0.1
+W,100M Hurdles Women,Beijing,2008,G,Dawn HARPER,USA,12.54
+W,100M Hurdles Women,Beijing,2008,S,Sally PEARSON,AUS,12.64
+W,100M Hurdles Women,Beijing,2008,B,Priscilla LOPES-SCHLIEP,CAN,12.64
 W,100M Hurdles Women,Sydney,2000,G,Olga SHISHIGINA,KAZ,12.65
 W,100M Hurdles Women,Sydney,2000,S,Gloria ALOZIE,NGR,12.68
 W,100M Hurdles Women,Sydney,2000,B,Melissa MORRISON,USA,12.76
@@ -1780,9 +1780,9 @@ W,1500M Women,Munich,1972,B,Paola PIGNI-CACCHI,ITA,4:02.85
 W,200M Women,Rio,2016,G,Elaine THOMPSON,JAM,21.78
 W,200M Women,Rio,2016,S,Dafne SCHIPPERS,NED,21.88
 W,200M Women,Rio,2016,B,Tori BOWIE,USA,22.15
-W,200M Women,Beijing,2008,G,Veronica CAMPBELL-BROWN,JAM,21.74,+0.6
-W,200M Women,Beijing,2008,S,Allyson FELIX,USA,21.93,+0.6
-W,200M Women,Beijing,2008,B,Kerron STEWART,JAM,22.00,+0.6
+W,200M Women,Beijing,2008,G,Veronica CAMPBELL-BROWN,JAM,21.74
+W,200M Women,Beijing,2008,S,Allyson FELIX,USA,21.93
+W,200M Women,Beijing,2008,B,Kerron STEWART,JAM,22.00
 W,200M Women,Sydney,2000,G,Pauline DAVIS,BAH,22.27
 W,200M Women,Sydney,2000,S,Susanthika JAYASINGHE,SRI,22.28
 W,200M Women,Sydney,2000,B,Beverly MCDONALD,JAM,22.35

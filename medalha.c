@@ -15,19 +15,19 @@ void cadastrar_medalha() {
     printf("Genero (M/F): ");
     scanf(" %c", &nova.genero);
     printf("Modalidade: ");
-    scanf(" %49s[^\n]", nova.modalidade);
+    scanf(" %49[^\n]", nova.modalidade);
     printf("Cidade: ");
-    scanf(" %49s", nova.cidade);
+    scanf(" %49[^\n]", nova.cidade);
     printf("Ano: ");
     scanf("%d", &nova.ano);
-    printf("Tipo de Medalha (O/P/B): ");
+    printf("Tipo de Medalha (G/S/B): ");
     scanf(" %c", &nova.tipo_medalha);
     printf("Nome do Atleta: ");
-    scanf(" %49s[^\n]", nova.nome_atleta);
+    scanf(" %49[^\n]", nova.nome_atleta);
     printf("Pais de Origem: ");
-    scanf(" %49s[^\n]", nova.pais_origem);
+    scanf(" %49[^\n]", nova.pais_origem);
     printf("Tipo de Resultado (T: Tempo, D: Distancia, N: Nota, S: Descricao): ");
-    scanf(" %49s[^\n]", &nova.resultado);
+    scanf(" %49[^\n]", &nova.resultado);
   
 
     medalhas = realloc(medalhas, sizeof(Medalha) * (num_medalhas + 1));
@@ -66,10 +66,10 @@ void pesquisar_medalha() {
     else if (opcao == 'N') {
         char nome[50];
         printf("Digite o nome do atleta: ");
-        scanf(" %49s[^\n]", nome);
-        
+        scanf(" %49[^\n]", nome);
+
     }
-}
+}//TODO finalizar busca por nome
 
 void alterar_medalha() {
     
