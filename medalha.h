@@ -1,7 +1,8 @@
 #ifndef MEDALHA_H
 #define MEDALHA_H
 #define MAX_MEDALHAS 100
-
+//comentario pra tentar fazer o commit funcionar;
+//commit saiu todo errado por algum motivo tentando dnco
 
 typedef struct {
     int codigo;
@@ -28,14 +29,14 @@ typedef struct
 } MedalhaPorEdicao;
 
 
-Medalha vetor_medalhas(intnumMedalhas);
-Medalha inserir_atletas(Medalhamedalhas, int numMedalhas);
-Medalharemover_atletas(Medalha medalhas, intnumMedalhas);
+Medalha *vetor_medalhas(int *numMedalhas);
+Medalha *inserir_atletas(Medalha *medalhas, int *numMedalhas);
+Medalha *remover_atletas(Medalha *medalhas, int *numMedalhas);
 
-void pesquisar_atletas(Medalha medalhas, int numMedalhas);
-void ranking_medalhas(Medalhamedalhas, int numMedalhas);
-void exibir_medalhas(Medalha medalhas, int numMedalhas);
-void salvar_dados_bin(Medalhamedalhas, int numMedalhas);
+void pesquisar_atletas(Medalha *medalhas, int numMedalhas);
+void ranking_medalhas(Medalha *medalhas, int numMedalhas);
+void exibir_medalhas(Medalha *medalhas, int numMedalhas);
+void salvar_dados_bin(Medalha *medalhas, int numMedalhas);
 void exportar_para_csv(Medalha *medalhas, int numMedalhas);
 
 void le_string(char texto[], int tamanho);
