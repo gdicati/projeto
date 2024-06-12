@@ -1,21 +1,21 @@
-# Makefile para compilar e executar o programa principal
+CC=gcc
+CFLAGS=-c -Wall
+LDFLAGS=
+SOURCES=$(wildcard *.c)
+HEADERS=$(wildcard *.h)
+OBJECTS=$(SOURCES:.c=.o)
+EXECUTABLE=medalcollection
 
-# O executável final
-main: main.o medalha.o
-    gcc main.o medalha.o -o main
+all: $(SOURCES) $(EXECUTABLE)
 
-# Compilando o arquivo objeto principal
-main.o: main.c medalha.h
-    gcc -c main.c
+$(EXECUTABLE): $(OBJECTS)
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
-# Compilando o arquivo objeto medalhas
-medalha.o: medalha.c medalha.h
-    gcc -c medalha.c
+%.o: %.c $(HEADERS)
+	$(CC) $(CFLAGS) $< -o $@
 
-# Limpa os arquivos objeto e o executável
-clean:
-    rm -f *.o main
+clear:
+	rm -rf $(OBJECTS) $(EXECUTABLE)
 
-# Executa o programa
-run:
-    ./main
+run: $(EXECUTABLE)
+	./$(EXECUTABLE)
