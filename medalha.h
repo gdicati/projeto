@@ -1,11 +1,12 @@
-#ifndef MEDALHA_H
-#define MEDALHA_H
-#define MAX_MEDALHAS 100
-//comentario pra tentar fazer o commit funcionar;
-//commit saiu todo errado por algum motivo tentando dnco
+#ifndef MEDALHAS_H
+#define MEDALHAS_H
 
-typedef struct {
-    int codigo;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct
+{
     char genero;
     char modalidade[50];
     char cidade[50];
@@ -13,31 +14,34 @@ typedef struct {
     char tipo_medalha;
     char nome_atleta[50];
     char pais_origem[50];
-    char resultado[50]; // Assumindo string para resultado
+    char resultado[50];
+    int codigo;
 } Medalha;
-
-Medalha medalhas[MAX_MEDALHAS];
-int num_medalhas = 0;
 
 typedef struct
 {
     int ano;
-    char pais[100];
-    int bronze;
-    int prata;
+    char pais[50];
     int ouro;
+    int prata;
+    int bronze;
 } MedalhaPorEdicao;
 
-
-Medalha *vetor_medalhas(int *numMedalhas);
-Medalha *inserir_atletas(Medalha *medalhas, int *numMedalhas);
-Medalha *remover_atletas(Medalha *medalhas, int *numMedalhas);
-
-void pesquisar_atletas(Medalha *medalhas, int numMedalhas);
-void ranking_medalhas(Medalha *medalhas, int numMedalhas);
-void exibir_medalhas(Medalha *medalhas, int numMedalhas);
-void salvar_dados_bin(Medalha *medalhas, int numMedalhas);
-void exportar_para_csv(Medalha *medalhas, int numMedalhas);
-
 void le_string(char texto[], int tamanho);
-#endif
+
+Medalha *vetor_medalhas(int *qtd_medalhas);
+
+Medalha *inserir_atletas(Medalha *medalhas, int *qtd_medalhas);
+
+Medalha *remover_atletas(Medalha *medalhas, int *qtd_medalhas);
+
+void pesquisar_atletas(Medalha *medalhas, int qtd_medalhas);
+
+void ranking_medalhas(Medalha medalhas[], int qtd_medalhas);
+
+void exibir_medalhas(Medalha medalhas[], int qtd_medalhas);
+
+void exportar_para_csv(Medalha medalhas[], int qtd_medalhas);
+
+void salvar_dados_bin(Medalha medalhas[], int qtd_medalhas);
+#endif // MEDALHAS_H
