@@ -179,20 +179,20 @@ char* obter_url_wikipedia(const char *json_resposta, size_t selecao) {
     char texto_formatado[strlen(texto_titulo) + 1];
     strcpy(texto_formatado, texto_titulo);
 
-    // Substituir espaços por underscores
+    // Substituir espaços por underline
     for (size_t i = 0; i < strlen(texto_formatado); i++) {
         if (texto_formatado[i] == ' ') {
             texto_formatado[i] = '_';
         }
     }
 
-    char *titulo_codificado = curl_easy_escape(curl_handle, texto_formatado, 0);   // Escapar título sanitizado
-    char *url = malloc(TAMANHO_BUFFER);   // Allocate memory for URL
-    snprintf(url, TAMANHO_BUFFER, "https://en.wikipedia.org/wiki/%s", titulo_codificado);   // Format Wikipedia URL
-    curl_free(titulo_codificado);   // Free allocated encoded string
+    char *titulo_codificado = curl_easy_escape(curl_handle, texto_formatado, 0);   
+    char *url = malloc(TAMANHO_BUFFER);   // Alocar memoria para url
+    snprintf(url, TAMANHO_BUFFER, "https://en.wikipedia.org/wiki/%s", titulo_codificado);   // formato da url da wikipedia
+    curl_free(titulo_codificado);   // limpa a string codificada
 
-    curl_easy_cleanup(curl_handle);   // Cleanup curl session
-    json_decref(root);   // Decrement reference count
+    curl_easy_cleanup(curl_handle);   // limpa a sessao do curl
+    json_decref(root);   // decrementa contagem de referencia
 
-    return url;   // Return allocated URL
+    return url;   // retorna a url alocada
 }
