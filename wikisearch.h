@@ -2,7 +2,7 @@
 #define WIKISEARCH_H
 #include <stddef.h>
 
-// Protótipos das funções para o módulo de busca na Wikipedia
+//todo: n deixar minha chave de api pública o.O
 
 /**
  * @brief Busca informações relacionadas ao atleta especificado na Wikipedia.
