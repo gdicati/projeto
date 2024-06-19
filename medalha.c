@@ -109,6 +109,96 @@ void le_string(char texto[], int tamanho)
     texto[strcspn(texto, "\n")] = '\0';
 }
 
+void medalhas_continente(Medalha *medalhas, int qnt_medalha){
+
+    int america_do_norte = 0;
+    int america_do_sul = 0;
+    int europa = 0;
+    int africa = 0;
+    int asia = 0;
+    int oceania = 0;
+
+    printf("SAocoaetggn\n");
+
+    for (int i = 0; i < qnt_medalha; i++) {
+        char *codigo_pais = medalhas[i].pais_origem;
+
+        // América do Norte
+        if (strcmp(codigo_pais, "USA") == 0 || strcmp(codigo_pais, "CAN") == 0 ||
+            strcmp(codigo_pais, "CUB") == 0 || strcmp(codigo_pais, "MEX") == 0 ||
+            strcmp(codigo_pais, "PAN") == 0 || strcmp(codigo_pais, "GUA") == 0 ||
+            strcmp(codigo_pais, "DOM") == 0 || strcmp(codigo_pais, "PUR") == 0 ||
+            strcmp(codigo_pais, "HAI") == 0 || strcmp(codigo_pais, "JAM") == 0 ||
+            strcmp(codigo_pais, "TTO") == 0 || strcmp(codigo_pais, "BAR") == 0 ||
+            strcmp(codigo_pais, "BWI") == 0 || strcmp(codigo_pais, "GRN") == 0) {
+            america_do_norte++;
+        }
+        // América do Sul
+        else if (strcmp(codigo_pais, "ARG") == 0 || strcmp(codigo_pais, "BRA") == 0 ||
+                 strcmp(codigo_pais, "CHI") == 0 || strcmp(codigo_pais, "COL") == 0 ||
+                 strcmp(codigo_pais, "ECU") == 0 || strcmp(codigo_pais, "VEN") == 0) {
+            america_do_sul++;
+        }
+        // Europa
+        else if (strcmp(codigo_pais, "ITA") == 0 || strcmp(codigo_pais, "GBR") == 0 ||
+                 strcmp(codigo_pais, "FIN") == 0 || strcmp(codigo_pais, "POR") == 0 ||
+                 strcmp(codigo_pais, "FRA") == 0 || strcmp(codigo_pais, "SWE") == 0 ||
+                 strcmp(codigo_pais, "BEL") == 0 || strcmp(codigo_pais, "HUN") == 0 ||
+                 strcmp(codigo_pais, "POL") == 0 || strcmp(codigo_pais, "NED") == 0 ||
+                 strcmp(codigo_pais, "GER") == 0 || strcmp(codigo_pais, "BUL") == 0 ||
+                 strcmp(codigo_pais, "ESP") == 0 || strcmp(codigo_pais, "GDR") == 0 ||
+                 strcmp(codigo_pais, "FRG") == 0 || strcmp(codigo_pais, "LUX") == 0 ||
+                 strcmp(codigo_pais, "IRL") == 0 || strcmp(codigo_pais, "SUI") == 0 ||
+                 strcmp(codigo_pais, "GRE") == 0 || strcmp(codigo_pais, "NOR") == 0 ||
+                 strcmp(codigo_pais, "TUR") == 0 || strcmp(codigo_pais, "DEN") == 0 ||
+                 strcmp(codigo_pais, "SVK") == 0 || strcmp(codigo_pais, "LAT") == 0 ||
+                 strcmp(codigo_pais, "EUN") == 0 || strcmp(codigo_pais, "BLR") == 0 ||
+                 strcmp(codigo_pais, "EST") == 0 || strcmp(codigo_pais, "CZE") == 0 ||
+                 strcmp(codigo_pais, "LTU") == 0 || strcmp(codigo_pais, "SLO") == 0 ||
+                 strcmp(codigo_pais, "UKR") == 0 || strcmp(codigo_pais, "ROU") == 0 ||
+                 strcmp(codigo_pais, "YUG") == 0 || strcmp(codigo_pais, "AUT") == 0 ||
+                 strcmp(codigo_pais, "CRO") == 0 || strcmp(codigo_pais, "ISL") == 0 ||
+                 strcmp(codigo_pais, "SRB") == 0 || strcmp(codigo_pais, "TCH") == 0 ||
+                 strcmp(codigo_pais, "URS") == 0 || strcmp(codigo_pais, "RUS") == 0) {
+            europa++;
+        }
+        // África
+        else if (strcmp(codigo_pais, "KEN") == 0 || strcmp(codigo_pais, "ETH") == 0 ||
+                 strcmp(codigo_pais, "MAR") == 0 || strcmp(codigo_pais, "TUN") == 0 ||
+                 strcmp(codigo_pais, "ERI") == 0 || strcmp(codigo_pais, "NAM") == 0 ||
+                 strcmp(codigo_pais, "RSA") == 0 || strcmp(codigo_pais, "ALG") == 0 ||
+                 strcmp(codigo_pais, "ZAM") == 0 || strcmp(codigo_pais, "UGA") == 0 ||
+                 strcmp(codigo_pais, "CIV") == 0 || strcmp(codigo_pais, "SUD") == 0 ||
+                 strcmp(codigo_pais, "BOT") == 0 || strcmp(codigo_pais, "BDI") == 0 ||
+                 strcmp(codigo_pais, "MOZ") == 0 || strcmp(codigo_pais, "CMR") == 0 ||
+                 strcmp(codigo_pais, "DJI") == 0 || strcmp(codigo_pais, "NGR") == 0 ||
+                 strcmp(codigo_pais, "TAN") == 0) {
+            africa++;
+        }
+        // Ásia
+        else if (strcmp(codigo_pais, "CHN") == 0 || strcmp(codigo_pais, "QAT") == 0 ||
+                 strcmp(codigo_pais, "KSA") == 0 || strcmp(codigo_pais, "PHI") == 0 ||
+                 strcmp(codigo_pais, "SRI") == 0 || strcmp(codigo_pais, "JPN") == 0 ||
+                 strcmp(codigo_pais, "IND") == 0 || strcmp(codigo_pais, "IRI") == 0 ||
+                 strcmp(codigo_pais, "TPE") == 0 || strcmp(codigo_pais, "KAZ") == 0 ||
+                 strcmp(codigo_pais, "TJK") == 0 || strcmp(codigo_pais, "SYR") == 0 ||
+                 strcmp(codigo_pais, "KOR") == 0 || strcmp(codigo_pais, "BRN") == 0) {
+            asia++;
+        }
+        // Oceania
+        else if (strcmp(codigo_pais, "AUS") == 0 || strcmp(codigo_pais, "NZL") == 0) {
+            oceania++;
+        }
+    }
+    printf("Quantidade de medalhas por continente!\n");
+    printf("América do Norte: %d\n", america_do_norte);
+    printf("América do Sul: %d\n", america_do_sul);
+    printf("Europa: %d\n", europa);
+    printf("África: %d\n", africa);
+    printf("Ásia: %d\n", asia);
+    printf("Oceania: %d\n", oceania);
+}
+
 Medalha *inserir_atletas(Medalha *medalhas, int *qnt_medalhas)
 {
     Medalha *temp = realloc(medalhas, (*qnt_medalhas + 1) * sizeof(Medalha));

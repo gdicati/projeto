@@ -16,6 +16,7 @@ typedef struct
 
 Medalha *vetor_medalhas(int *qnt_medalhas);
 void le_string(char texto[], int tamanho);
+void medalhas_continente(Medalha *medalhas, int qnt_medalha);
 Medalha *inserir_atletas(Medalha *medalhas, int *qnt_medalhas);
 Medalha *remover_atletas(Medalha *medalhas, int *qnt_medalhas);
 void pesquisar_atletas(Medalha *medalhas, int qnt_medalhas);
@@ -25,3 +26,9 @@ void exportar_para_csv(Medalha *medalhas, int qnt_medalhas);
 void carregar_dados_iniciais(const char *filename);
 
 #endif
+
+
+
+
+
+

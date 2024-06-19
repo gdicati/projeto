@@ -14,7 +14,8 @@ void mostrar_menu()
     printf("5. Excluir medalha\n");
     printf("6. Exportar dados para CSV\n");
     printf("7. Pesquisar atleta na Wikipedia\n");
-    printf("8. Sair\n");
+    printf("8. Medalhas por continente\n");
+    printf("9. Sair\n");
 }
 
 int main()
@@ -73,12 +74,17 @@ int main()
                 }
                 break;
         case 8:
+            printf("ANTES\n");
+            medalhas_continente(medalhas_recebidas, qtd_atletas);
+            printf("DP`S\n");
+            break;
+        case 9:
             printf("Dados salvos. Saindo...\n");
             break;
         default:
             printf("Opção inválida. Ops...Deu erro.\n");
         }
-    } while (opcao != 8);
+    } while (opcao != 9);
 
     salvar_dados_bin(medalhas_recebidas, qtd_atletas);
 
