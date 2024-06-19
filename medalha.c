@@ -118,7 +118,6 @@ void medalhas_continente(Medalha *medalhas, int qnt_medalha){
     int asia = 0;
     int oceania = 0;
 
-    printf("SAocoaetggn\n");
 
     for (int i = 0; i < qnt_medalha; i++) {
         char *codigo_pais = medalhas[i].pais_origem;

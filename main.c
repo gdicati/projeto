@@ -74,9 +74,7 @@ int main()
                 }
                 break;
         case 8:
-            printf("ANTES\n");
             medalhas_continente(medalhas_recebidas, qtd_atletas);
-            printf("DP`S\n");
             break;
         case 9:
             printf("Dados salvos. Saindo...\n");
