@@ -6,7 +6,7 @@
 #include "wikisearch.h"
 
 #define TAMANHO_BUFFER  (256 * 1024)  // 256 KB
-#define URL_API_WIKI "https://pt.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch="
+#define URL_API_WIKI 
 
 // Estrutura para armazenar um bloco de memória dinâmica
 struct MemoriaStruct {
